@@ -1,0 +1,394 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("Images/code.gif");
+  background-repeat: repeat;
+  background-size: 20vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: 'Alagard';
+  src: url('Fonts/alagard.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Deutsch';
+  src: url('Fonts/Deutsch.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TypoGraphica';
+  src: url('Fonts/TypoGraphica.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'infinity';
+  src: url('Fonts/infinity.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OldNewsPaperTypes';
+  src: url('Fonts/OldNewspaperTypes.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'conthrax-sb';
+  src: url('Fonts/conthrax-sb.otf') format('opentype');
+}
+
+@font-face 
+{
+  font-family: 'garet-book';
+  src: url('Fonts/Garet-Book.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'octo';
+  src: url('Fonts/octo.ttf') format('truetype');
+}
+
+.draggableImage {
+  width: 400%;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/*Listen, I know all of the elem things 
+say the same thing and I definitely COULD create a new id to store that,
+but simply can't be bothered to do so*/
+#aboutme-elem {
+  z-index: 6;
+  position: absolute;
+  background-image: url("Images/unhelddisk.png");
+  background-size: cover;
+  font-size: 2vw;
+  width: 15vw;
+  height: 3.8vw;
+  left: 1%;
+  top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left !important;
+  font-family: 'Alagard', Arial, sans-serif;
+  cursor: move;
+  padding-left: 3%;
+  padding-top: .6%;
+}
+
+#projects-elem {
+  z-index: 6;
+  position: absolute;
+  background-image: url("Images/unhelddisk.png");
+  background-size: cover;
+  font-size: 2vw;
+  width: 15vw;
+  height: 3.8vw;
+  left: 1%;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left !important;
+  font-family: 'Alagard', Arial, sans-serif;
+  cursor: move;
+  padding-left: 3%;
+  padding-top: .6%;
+}
+
+#contact-elem {
+  z-index: 6;
+  position: absolute;
+  background-image: url("Images/unhelddisk.png");
+  background-size: cover;
+  font-size: 2vw;
+  width: 15vw;
+  height: 3.8vw;
+  left: 1%;
+  top: 37%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left !important;
+  font-family: 'Alagard', Arial, sans-serif;
+  cursor: move;
+  padding-left: 3%;
+  padding-top: .6%;
+}
+
+#research-elem {
+  z-index: 6;
+  position: absolute;
+  background-image: url("Images/unhelddisk.png");
+  background-size: cover;
+  font-size: 2vw;
+  width: 15vw;
+  height: 3.8vw;
+  left: 1%;
+  top: 26%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left !important;
+  font-family: 'Alagard', Arial, sans-serif;
+  cursor: move;
+  padding-left: 3%;
+  padding-top: .6%;
+}
+
+#custom-elem {
+  z-index: 6;
+  position: absolute;
+  background-image: url("Images/unhelddisk.png");
+  background-size: cover;
+  font-size: 2vw;
+  width: 15vw;
+  height: 3.8vw;
+  left: 1%;
+  top: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left !important;
+  font-family: 'Alagard', Arial, sans-serif;
+  cursor: move;
+  padding-left: 3%;
+  padding-top: .6%;
+}
+
+#floppy-disk-drive {
+  background-size: cover;
+  width: 47vw;
+  height: 16vw;
+  left: 32vw;
+  top: 34vw;
+  z-index: 3;
+  position: absolute;
+  background-image: url("Images/diskdrive0.png");
+}
+
+a{
+  color:rgb(231, 194, 46);
+}
+
+.scrollbox {
+  background-image: url("Images/nodisk.gif");
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  display: flex;
+  top: 3%; /* Adjust the top position as needed */
+  left: 20%; /* Adjust the left position as needed */
+  width: 70vw; /* Adjust the width as needed */
+  height: 32vw; /* Adjust the height as needed */
+  overflow: auto;
+  border-style: solid;
+  border-width: 0.9vw;
+  border-color: rgb(161, 172, 145);
+}
+
+.scrollbox::-webkit-scrollbar {
+  width: 25%; /* Adjust the width as needed */
+  border-radius: 0.5%;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+  background-image: url("Images/gradient.gif");
+  background-size: 40%;
+  background-repeat: repeat;
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+  border-radius: 0.5%;
+  background: rgb(12, 12, 12);
+}
+
+.scrollbox::-webkit-scrollbar-thumb:hover {
+  background-image: url("Images/sparkle.jpg");
+  background-size: 3%;
+  background-repeat: repeat;
+  border-radius: 0.2%;
+}
+
+
+#about-me{
+  color:rgb(255, 255, 255);
+  text-shadow: 0.1vw 0.1vw 0vw rgb(0, 0, 0);
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  line-height: 33px;
+  font-family: 'infinity', Arial, sans-serif;
+  font-size: 30px;
+}
+
+#projects{
+  color:rgb(255, 255, 255);
+  text-shadow: 0.1vw 0.1vw 0vw rgb(59, 48, 48);
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  line-height: 33px;
+  font-size: 70%;
+  font-family: 'conthrax-sb';
+}
+
+#contact{
+  color:rgb(0, 0, 0);
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  line-height: 33px;
+  font-size: 30px;
+  font-family: 'OldNewsPaperTypes';
+}
+
+#contact a{
+  color:rgb(6, 155, 6);
+}
+
+#research{
+  color:rgb(0, 0, 0);
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  line-height: 41px;
+  font-size: 30px;
+  font-family: 'garet-book';
+}
+
+.research-button{
+  background-color: #0a8d5b;
+  color: #f1e3e3;
+  border: none;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block; 
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center; 
+  width: 150px;
+  text-decoration: none;
+}
+
+.research-button:hover{
+  background-color: #036328;
+}
+
+#custom{
+  color:rgb(0, 0, 0);
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  line-height: 33px;
+  font-size: 400%;
+  font-family: 'octo';
+}
+
+.column-format {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: 60%; /* Adjust this value to change the width of the columns */
+  padding-left: 1%;
+  padding-right: 1%;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form{
+  background: #ffffff00;
+  display: flex;
+  flex-direction: column;
+  padding: 3vw 3vw;
+  width: 50%;
+  max-width: 600px;
+  font-family: "OldNewsPaperTypes";
+}
+form h3 {
+  color:rgb(0, 0, 0);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "OldNewsPaperTypes";
+}
+
+form input, form textarea {
+  border: 0;
+  padding: 0.1vw;
+  margin: 0.1em 0;
+  outline: none;
+  background: #f7f7f7;
+  font-size: 16px;
+}
+form input:focus, form textarea:focus{
+  background: #eeeeee;
+
+}
+
+form textarea{
+  resize: none;
+  height: 200px;
+}
+
+form button{
+  padding: 0.4em;
+  color:#000000;
+  font-family: "OldNewsPaperTypes";
+  cursor:pointer;
+  width: 10em;
+  margin:0.5em;
+}
+
+#msg{
+  color: rgb(0, 0, 0);
+  align-items: center;
+  text-align: center;
+  margin-top: .5em;
+  font-size: 30px;
+}
+
+.silly-button{
+  background-color: rgb(35, 142, 35);
+  color: #0033ff;
+  border: none;
+  padding: 2%;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block; 
+  font-size: 40%;
+  font-weight: bold;
+  border-radius: 1px;
+  cursor: pointer;
+  text-align: center; 
+  width: 20%;
+  height: 5%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.silly-button:hover{
+  background-color: rgb(238, 173, 53);
+}

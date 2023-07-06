@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Feller</title>
+  <style>
+    body {
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: rgb(158, 168, 172);
+    }
+  </style>
+  <link rel="stylesheet" href="./portfolio.css" />
+</head>
+
+<body>
+  <!--adds confetti library to the site-->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+ 
+  <div id="container">
+    <!--cartridges, on the side of the screen-->
+    <div id="aboutme-elem">
+      About Me
+    </div>
+    <div id="projects-elem">
+      Projects
+    </div>
+    <div id="contact-elem">
+      Contact
+    </div>
+    <div id="research-elem">
+      Research
+    </div>
+    <div id="custom-elem">
+      ?????
+    </div>
+    <div class="scrollbox">
+      <!--about me page stuff-->
+      <div id="about-me">
+      <img src="Images/name.gif" style="width: 50vw;">
+      <div class="column-format">
+        <div class="column" style="font-size: 0.95em; border-radius:1em; background-color: rgba(38, 38, 105, 0.5);">
+          <h2>Background</h2>
+          <ul>
+            <li>Graduated from <a href="https://www.signature.edu/" style = "font-size: 1.1em;">Signature School</a>, the number one charter school in the US, in 2023.</li>
+            <li>Attending <a href="https://www.purdue.edu/" style = "font-size: 1.1em;">Purdue</a>, starting in 2023. Expected to graduate in 2027.</li>
+            <li>Ryan has a background in <a href="https://momke72.itch.io/" style = "font-size: 1.1em;">GameDev</a>, starting in 2019.</li>
+            <li>He worked as a lifeguard in the summer of 2020 and 2021.</li>
+            <li>He worked at <a href="https://ww2.freshthyme.com/sm/planning/rsid/104/?ak=true&path_org=%2f" style = "font-size: 1.1em;">Fresh Thyme</a> in the summer of 2022. </li>
+            <li>He worked as an Intern at <a href="nextech.org" style = "font-size: 1.1em;">Nextech</a> in the summer of 2023.</li>
+          </ul>
+          <h2>Abilities</h2>
+          <ul>
+            <li>C#, Python, Java</li>
+            <li>Web Development, including this site! This includes JS, CSS, and HTML.</li>
+            <li>Good soft skills!</li>
+            <li>Unity game engine with C#</li>
+          </ul>
+          <h2>Achievements</h2>
+          <ul>
+            <li><b><u style = "font-size: 1.1em;">16</u></b> AP/IB classes taken in High School</li>
+            <li><b><u style = "font-size: 1.1em;">10</u></b> games published to date </li>
+            <li>Placed Top <b><u style = "font-size: 1.1em;">1.2%</u></b> in the <a href="https://itch.io/jam/gmtk-2021/rate/1085165" style = "font-size: 1.1em;">GMTK 2021</a> game jam.</li>
+            <li>Placed Top <b><u style = "font-size: 1.1em;">3%</u></b> in the <a href="https://itch.io/jam/gmtk-jam-2022/rate/1610223" style = "font-size: 1.1em;">GMTK 2022</a> game jam.</li>
+          </ul>
+          <h2>Academics</h2>
+          <ul>
+            <li><b><u style = "font-size: 1.1em;">3.9 GPA</u></b></li>
+            <li><b><u style = "font-size: 1.1em;">AP Capstone Diploma</u></b></li>
+            <li><b><u style = "font-size: 1.1em;">Attempted</u></b> the IB Programme<a href="https://itch.io/jam/gmtk-2021/rate/1085165" style = "font-size: 1.1em;">GMTK 2021</a> game jam.</li>
+          </ul>
+        </div>
+        <div class="column" style="width: 50%;">
+          <img src="Images/self.gif" style="border-color: rgb(29, 129, 99); width: 15vw;height: 20vw; border-style: groove; border-width: 0.45em;">
+          <p style="border-radius:1em;  padding:1.5em; padding-left: 3em; background-color: rgba(26, 26, 57, 0.645);">
+            <i style="display: block; text-align: center; margin: 0px; font-size: 1.7em;">Ryan</i>
+            <b>Class: </b>Human<br>
+            <b>Age: </b> 18<br>
+           <b>Role: </b> CS Student at Purdue<br>
+            <b>Health: </b> 175hp<br>
+           <b>Occupation: </b> Intern at Nextech<br>
+          </p>
+        </div>
+      </div>     
+    </div>
+    <!--PROOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOJECTS PAGE STARTS RIGHT HERE-->
+    <div id="projects">
+      <div style = "display: flex; justify-content: center;">
+        <img src="Images/cone.gif" style="width: 2vw; display: inline-block; ">
+        <img src="Images/projectstitle.gif" style="width: 16vw; height: 3.23vw; display: inline-block;">
+        <img src="Images/cone.gif" style="width: 2vw; display: inline-block;">
+      </div>
+      <p style="padding: 1vw; font-size: 0.65vw; border-radius:0.3vw; background-color: rgba(0, 0, 0, 0.5);">
+        <span style="font-size: 1.3vw;"><u>Games</u></span><br>
+        My game development journey began at the end of 2019, when I began developing Ichor, a greek inspired shooter game. Since then, I have completed 10 games, alongside many unfinished projects. Below are all of the projects I have finished, along with my contributions to each of them! Please note that my projects are published under the name "momke".
+      </p>
+      <div class="column-format"> <!--big column o games-->
+        <div class="column" style="padding: 1vw; margin: 0.1vw; font-size: 0.3vw; border-radius:1em; background-color: rgba(0, 0, 0, 0.5);">
+          <p style="font-size: 15px; line-height: 20px;"><u>Meowchemy</u> was developed with members of my school's programming club. For this game I did all of the programming, animation, and even some of the art.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/1574862?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%" ><a href="https://momke72.itch.io/meowchelmy">Meowchemy by Momke, Hern, erose524, logan</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>beat brawl</u> was developed in just one day for my art class. I did all of the art, music, and programming.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/1535668?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%"><a href="https://momke72.itch.io/beat-brawl">beat brawl by Momke</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>Idol's Tower</u> was developed in a week for <a href="https://itch.io/jam/blackthornprod-game-jam-3/rate/872278">Blackthornprod GAME JAM #3</a>. I did art and was one of the main programmers on this project. </p>
+          <iframe frameborder="0" src="https://itch.io/embed/872278?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%"><a href="https://momke72.itch.io/idolstower">Idol's Tower by Momke, sengbschbep, Peter Kaku, Hristo Kalinov</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>Panda in Space</u> was developed in a month for <a href="https://itch.io/jam/beginners-circle-jam-3/rate/796039">Beginners Circle Jam #3</a>. The entire game is my work.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/796039?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%" ><a href="https://momke72.itch.io/panda-in-space">Panda in Space by Momke</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>Ichor</u> was under development from November of 2019 until the end of the summer of 2020. This is my first game, and all of the programming and over 85% of the art is my work.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/751125?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%"><a href="https://momke72.itch.io/ichor">Ichor by Momke</a></iframe>
+        </div>
+        <div class="column" style="padding: 1vw; margin: 0.1vw; font-size: 0.3vw; border-radius:1em; background-color: rgba(0, 0, 0, 0.5);">
+          <p style="font-size: 15px; line-height: 20px;"><u>Little Dice</u> was developed in 48 hours for <a href="https://itch.io/jam/gmtk-jam-2022/rate/1610223">GMTK Game Jam 2022</a>. On this project, my primary role was as a gameplay programmer, but I also worked beyond that in areas such as animation and game flow.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/1610223?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%"><a href="https://victorghys.itch.io/little-dice">Little Dice by Victor Ghys, JestQuest, lilly, Momke</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>RunnerOS</u> was developed in 48 hours for <a href="https://abhorrentpropaganda.itch.io/runneros">GMTK Game Jam 2021</a>. On this project, my primary role was as a gameplay programmer, while our other programmer worked on UI.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/1085165?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%"><a href="https://abhorrentpropaganda.itch.io/runneros">RunnerOS by AbhorrentPropaganda, Momke, Mlem, JestQuest, val</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>Sublime Monkey Perfection</u> was made with the help of my high schoo programming club. I did all of the programming and most of the art, excluding one asset. Our club members helped with design and music.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/1330003?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%"><a href="https://momke72.itch.io/monkey-kong">Sublime Monkey Perfection by Momke, Cuora / Depths, Rowannie</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>Cryptologist</u> was made in one week for the <a href="https://itch.io/jam/historically-accurate-3/rate/873877">Historically Accurate Game Jam 3</a>. I did all the programming, while a friend of mine did art.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/873877?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%"><a href="https://momke72.itch.io/cryptologist">Cryptologist by Momke, Beewizard</a></iframe>
+          <p style="font-size: 15px; line-height: 20px;"><u>Cryptologist</u> was made in one week for the <a href="https://itch.io/jam/a-game-by-its-cover-2020/rate/784375">A Game By Its Cover 2020</a> game jam. All the work in this game is my own.</p>
+          <iframe frameborder="0" src="https://itch.io/embed/784375?border_width=5&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=fa5c5c&amp;border_color=672d7e" width="100%" ><a href="https://momke72.itch.io/chit-chat">Chit Chat by Momke</a></iframe>
+        </div>
+      </div>    
+      <div style="padding: 1vw; margin-top: 0.5vw; font-size: 0.65vw; border-radius:0.3vw; background-color: rgba(0, 0, 0, 0.5);">
+        <p>
+          <span style="font-size: 1.3vw;"><u>Catapult Projects</u></span><br>
+            During my time at the <a href="https://nextech.org/">Nextech Catapult</a> program, I developed a number of small projects to help me to learn principles of HTML, CSS, and JavaScript. Check them out! You won't be dissapointed.
+            <ul>
+              <li><a href="https://acessibility-site--ryanff72.repl.co/">Accessibility and Enjoyment in Digital Games</a>, also mentioned in the Research disk.</li>
+              <li><a href="https://warios-curse--ryanff72.repl.co/">Wario's Curse</a>, a short choose your own adventure game!</li>
+              <li><a href="https://groupsorter--ryanff72.repl.co/">The Group Sorter</a>, a solo project I completed to make sure I understood the JavaScript concepts we were taught during the program.</li>
+            </ul>
+          </p>
+      </div> 
+      <img src="Images/construction.gif">
+    </div>
+    <!--COOOOOOOOOOOOOOOOOOOOOOONNNNNNNNNNNNNNNNNTTTTTTTTTTTTTTAAAAAAAAAACCCCCCCCCCCTTTTTTTTTTTT PAGE STARTS RIGHT HERE-->
+    <div id="contact">
+      <img src="Images/contacttitle.gif" style="width: 20vw;">
+      
+      <div style = "display: flex; justify-content: center;">
+        <img src="Images/spinny.gif" style="display: inline-block; width: 20%; height: 20%; padding-top: 4%;">
+        <form name="submit-to-google-sheet"style="width: 600px">
+          <h3>Send a Message</h3>
+          <input name="name" type="text" placeholder="Name" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Tell me what's on your mind..." rows="4"></textarea>
+          <button type="submit" required>Submit!!! :3</button>
+          <p id="msg"></p>
+        </form>
+        <img src="Images/spinny.gif"style="display: inline-block; width: 20%; height: 20%; padding-top: 4%;">
+    </div>
+    <p>
+      Are you looking to get into contact with me? Let's be honest, you probably are. Luckily this page will help you accomplish just that! Use any of the methods on this page to help us get in touch. Best wishes.
+<br><br>
+        Work Email: <a href="mailto:ryanff72@gmail.com?">ryanff72@gmail.com</a><br>
+        School Email: <a href="mailto:fellerr@purdue.edu?">fellerr@purdue.edu</a>
+
+    </p>
+    <img src="Images/emailanim.gif" style="width: 20%;">
+    <!--script for sending stuff off to google excel-->
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyKSDDnizr14pIyUUw2r8__W9pLlitFT1dk3BB0UnlwJgZY1ntOZ5Fdpp0pH6LLRvRNkw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Your message was recieved sucessfully!"
+              setTimeout(function(){
+                msg.innerHTML = ""
+
+              }, 5000)
+              form.reset()
+
+            }
+            )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </div>
+    
+    <!--REEEEEESSSSSSSSSSEEEEEEEEEEEEAAAAAAAAAARRRRRCCCCCCCHHHHHHHH PAGE STARTS RIGHT HERE-->
+    <div id="research">
+      <div style = "display: flex; justify-content: center;">
+        <img src="Images/microscope.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/researchtitle.gif" style="width: 20vw; display: inline-block;">
+        <img src="Images/microscope.gif" style="width: 3vw; display: inline-block;">
+      </div>
+      <div class="column-format"> <!--big column o research-->
+        <div class="column" style="padding: 0.5vw; border-radius:0.2em; background-color: rgba(0, 0, 0, 0);">
+          <div style="padding: 1vw; margin-top: 0.5vw; margin-left: 2%; border-radius:0.3vw; background-color: rgba(75, 72, 72, 0.5);">
+            <p>
+             <span style="font-size: 40px;"><u>Accessibility and Enjoyment in Digital Games</u></span><br><br>
+               <i>Accessibility and Enjoyment in Digital Games</i> was written to fulfill the requirements for the <br><a href="https://www.ibo.org/programmes/diploma-programme/">
+                IB Programme</a> and the <a href="https://apcentral.collegeboard.org/courses/ap-capstone">
+                AP Capstone Diploma</a>. This paper examines the relationship between accessibility and enjoyment in select digital games. As part of the <a href="https://nextech.org/">Nextech Catapult</a>
+                program, I was able to make a small website showcasing my findings. Check it out!
+            </p>
+           <a class="research-button" href="https://docs.google.com/document/d/1c-Bygl5HrIkpn9lWWi6fsdVTazLauHa3tIRJXjhRc8E/edit?usp=sharing">See the Paper</a>
+           <a class="research-button" href="https://acessibility-site--ryanff72.repl.co/">See the Website</a>
+          </div> 
+          <div style="padding: 1vw; margin-top: 0.5vw; margin-left: 2%; border-radius:0.3vw; background-color: rgba(75, 72, 72, 0.5);">
+            <p>
+             <span style="font-size: 40px;"><u>Artistic Comparative Study</u></span><br><br>
+               My Comparitave study was written in the <a href="https://www.ibo.org/programmes/diploma-programme/">
+              IB Programme</a>, for IB Art HL in particular. Within the comparitave study, I provide a formal analysis of three artworks and then synthesize elements from all
+               three of them into an art piece of my own.
+            </p>
+           <a class="research-button" href="https://docs.google.com/presentation/d/1VYBIf57FVKXgtEPsK1iWIEtyyHlc3VS9iNFAFgBYxnI/edit?usp=sharing">See the Paper</a>
+          </div> 
+          <div style="padding: 1vw; margin-top: 0.5vw; margin-left: 2%; border-radius:0.3vw; background-color: rgba(75, 72, 72, 0.5);">
+            <p>
+              <span style="font-size: 40px;"><u>The Beliefs of Leon Trotsky and Joseph Stalin</u></span><br><br>
+              <i>The Beliefs of Leon Trotsky and Joseph Stalin</i> is my History IA, written as a part of the <a href="https://www.ibo.org/programmes/diploma-programme/">
+              IB Programme</a>. This paper is a comparative study which looks into sources which provide information on the political views
+              of Leon Trotsky and Joseph Stalin. This paper is written at the high school level, and the topic was assigned to me by my history professor.
+            </p>
+            <a class="research-button" href="https://docs.google.com/document/d/1Kbx2Vv5M0RAVJf9jzfY7K0g16ScJpB6lHb5NUTF158o/edit?usp=sharing">See the Paper</a>
+          </div> 
+        </div>
+
+        <!--second research columnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn-->
+
+        <div class="column" style="padding: 0.5vw; border-radius:0.2em; background-color: rgba(0, 0, 0, 0);">
+          <div style="padding: 1vw; margin-top: 0.5vw; margin-right: 2%; border-radius:0.3vw; background-color: rgba(75, 72, 72, 0.5);">
+            <p>
+              <span style="font-size: 40px;"><u>Pouring Methods: Expediting Flow Rates with an Exploratory Approach</u></span><br><br>
+              <i>Pouring Methods: Expediting Flow Rates with an Exploratory Approach</i> is my Physics IA, written as a part of the <a href="https://www.ibo.org/programmes/diploma-programme/">
+              IB Programme</a>. This experiment aims to describe the relationships between the method of pouring for multiple water levels and discover which method allows the fluid to leave the container at the most efficient rate.
+            </p>
+            <a class="research-button" href="https://docs.google.com/document/d/1gtNrfiwYhb3cIS-Vu8iDaifaOLBM-44JQ8fQBbxM1TA/edit?usp=sharing">See the Paper</a>
+          </div>
+          <div style="padding: 1vw; margin-top: 0.5vw; margin-right: 2%; border-radius:0.3vw; background-color: rgba(75, 72, 72, 0.5);">
+            <p>
+              <span style="font-size: 40px;"><u>Growth Rates of Programs in the Top Universities in the US</u></span><br><br>
+                <i>Growth Rates of Programs in the Top Universities in the US</i> was written as
+                part of the <br><a href="https://www.ibo.org/programmes/diploma-programme/">
+                IB Programme</a>, for IB Math AA SL in particular. This paper uses mathematical models
+                to predict the size of majors at some of the top universities in the United States.
+                This paper was written at the high school level.
+             </p>
+            <a class="research-button" href="https://docs.google.com/document/d/1X3OAIVA8k9zlDBYbLhNUUvCOBbYCTVixqE3qt_2jeRA/edit?usp=sharing">See the Paper</a>
+           </div> 
+          <div style="padding: 1vw; margin-top: 0.5vw; margin-right: 2%; border-radius:0.3vw; background-color: rgba(75, 72, 72, 0.5);">
+            <p>
+              <span style="font-size: 40px;"><u>History Humanized: An Analysis of Julia Alvarez’s Techniques within The Time of the Butterflies</u></span><br><br>
+              <i>History Humanized: An Analysis of Julia Alvarez’s Techniques within The Time of the Butterflies
+              </i> <br>is my English IA, written as a part of the<br> <a href="https://www.ibo.org/programmes/diploma-programme/">
+              IB Programme</a>.
+            </p>
+            <a class="research-button" href="https://docs.google.com/document/d/1Nsgibd7fTEtXdf-ZpCrPGVwvFHZstUi67o8Qj71mcE4/edit?usp=sharing">See the Paper</a>
+          </div> 
+        </div>
+    </div>
+    <img src="Images/construction.gif">
+  </div>
+    <!--CCCCCCCCCCUUUUUUUUUUSSSSSSSSTTTTTTTTTTTTTTOOOOOOOMMMMMMMMMMMMMIIIIIIZZZZZZZZZAAAAAAAATTTTTTTTIIIIIIIIIIOOOOOOONNNNNN PAGE STARTS RIGHT HERE-->
+    <div id="custom">
+      <div style = "display: flex; justify-content: center;">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/customtitle.gif" style="width: 20vw; display: inline-block;">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+        <img src="Images/hat.gif" style="width: 3vw; display: inline-block; ">
+      </div>
+      <img src="Images/lilguy.gif" style="width: 20%;">
+      <div style="display: flex; margin-left: auto; margin-right: auto; justify-content: center;">
+        <img src="Images/tvstatic.gif" style="width: 10%; display: inline-block; ">
+       <!--background change-->
+        <a class="silly-button" onclick="randomBackground()">BAGD26RTUO5UND345!!!!</a>
+       <!--confetti change-->
+        <a class="silly-button" onclick="confetti({
+            particleCount: 100, 
+            origin: {
+              x: Math.random(),
+              // since particles fall down, skew start toward the top
+             y: (Math.random()) - 0.2
+            },
+            spread: 360,
+             angle: 50,
+            gravity: 1,
+             startVelocity:60
+           })"><b></b>CDOGET2YAYAYAYA38!!!!</b></a>
+         <!--border change-->
+        <a class="silly-button" onclick="randomBorder()">B567OERDER34!!!!</a>
+        <img src="Images/tvstatic.gif" style="width: 10%; display: inline-block; ">
+      </div>
+      
+          <!--about this site stuff-->
+          <div style="justify-content: center; margin-right: auto; margin-left: auto;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+            <img src="Images/tvstatic.gif" style="width: 8%; display: inline-block;">
+          </div>
+          <div style="padding: 1vw; margin-top: 0.5vw; margin-left: 2%; margin-right:2%; border-radius:3px; background-color: rgba(0, 0, 0, 0.717);">
+             <span style="font-size: 40px; color: white;"><u>About this Site</u></span><br>
+             <p style="color: white; font-size: 20px;">This website was made by Ryan Feller. Last updated on July 8, 2023. A special thanks to all the wonderful speakers at the Nextech Catapult program who helped make this website possible.</p>
+        </div>
+      
+
+    </div>
+
+
+    </div>
+    <div id="floppy-disk-drive">
+    </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>

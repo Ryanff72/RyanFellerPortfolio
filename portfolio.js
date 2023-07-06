@@ -321,7 +321,7 @@ function positionprojectsCartridge() {
   else{
 
     projectsCartridge.style.left="1%";
-    projectsCartridge.style.top="26%";
+    projectsCartridge.style.top="15%";
     projectsCartridge.style.zIndex="6";
     projectsPage.style.display = 'none';
     projectsCartridge.style.width="15vw";

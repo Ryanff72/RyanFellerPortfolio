@@ -197,7 +197,7 @@ document.head.appendChild(scrollboxStyle);
 
 
 //PPPPPPPPRRRRRRRROOOOOOOOJJJJJJJJEEEEEEEECCCCCCCCTTTTTTTTSSSSSSSS
-//mousedown
+// Start (mouse down / touch start)
 projectsCartridge.addEventListener(events[deviceType].down, (e) => {
   e.preventDefault();
   projectsCartridge.style.width = "17vw";
@@ -211,13 +211,13 @@ projectsCartridge.addEventListener(events[deviceType].down, (e) => {
   projectsCartridge.style.zIndex = "50";
   // Start movement
   moveElement = true;
-
+  
   activeDisk = projectsCartridge;
 });
 
 projectsCartridge.addEventListener(events[deviceType].move, (e) => {
   // If movement is true, then set top and left to new x and y while removing the offset
-  if (moveElement && activeDisk === projectsCartridge) {
+  if (moveElement && projectsCartridge === activeDisk) {
     e.preventDefault();
     let newX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
     let newY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
@@ -243,7 +243,7 @@ projectsCartridge.addEventListener(events[deviceType].move, (e) => {
 projectsCartridge.addEventListener(events[deviceType].up, (stopMovement = (e) => { moveElement = false; }));
 
 projectsCartridge.addEventListener("mouseleave", (e) => {
-  if (moveElement && activeDisk === projectsCartridge) {
+  if (moveElement && projectsCartridge === activeDisk) {
     projectsCartridge.style.left = e.clientX + 'px';
     projectsCartridge.style.top = e.clientY + 'px';
   }
@@ -280,21 +280,21 @@ function positionprojectsCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-     background-image: url("Images/greypaper.jpg");
+     background: white;
       background-size: 40vw;
       background-repeat: repeat;
     }
 
     .scrollbox::-webkit-scrollbar-thumb {
       border-radius: 0.5%;
-      background-image: url("Images/blackpaper.jpg");
-      background-size: 5vw;
+      background-image: url("Images/steel.jpg");
+      background-size: 60vw;
       background-repeat: repeat;
     }
 
    .scrollbox::-webkit-scrollbar-thumb:hover {
-      background: rgb(27, 23, 31);
-      background-size: 3%;
+    background-image: url("Images/blacksteen.jpg");
+      background-size: 60vw;
       background-repeat: repeat;
      border-radius: 0.2%;
     }
@@ -330,9 +330,9 @@ function positionprojectsCartridge() {
     projectsCartridge.style.paddingTop=".6%";
     projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
     projectsCartridge.innerHTML = "Projects";
-    
+
     var backgroundImage = scrollbox.style.backgroundImage;
-    if (backgroundImage.includes("Images/paperbackground.png")) {
+    if (backgroundImage.includes("Images/whitebackground.jpg")) {
       scrollbox.style.backgroundImage = "url(Images/nodisk.gif)";
       scrollbox.style.backgroundSize="cover";
       floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";
@@ -620,7 +620,7 @@ function positionresearchCartridge() {
   else{
 
     researchCartridge.style.left="1%";
-    researchCartridge.style.top="26%";
+    researchCartridge.style.top="37%";
     researchCartridge.style.zIndex="6";
     researchPage.style.display = 'none';
     researchCartridge.style.width="15vw";

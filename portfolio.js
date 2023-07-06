@@ -329,7 +329,7 @@ function positionprojectsCartridge() {
     projectsCartridge.style.paddingLeft="3%";
     projectsCartridge.style.paddingTop=".6%";
     projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
-    projectsCartridge.innerHTML = "Contact";
+    projectsCartridge.innerHTML = "Projects";
     
     var backgroundImage = scrollbox.style.backgroundImage;
     if (backgroundImage.includes("Images/paperbackground.png")) {

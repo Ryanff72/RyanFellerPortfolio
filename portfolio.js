@@ -620,7 +620,7 @@ function positionresearchCartridge() {
   else{
 
     researchCartridge.style.left="1%";
-    researchCartridge.style.top="37%";
+    researchCartridge.style.top="26%";
     researchCartridge.style.zIndex="6";
     researchPage.style.display = 'none';
     researchCartridge.style.width="15vw";

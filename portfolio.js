@@ -197,7 +197,7 @@ document.head.appendChild(scrollboxStyle);
 
 
 //PPPPPPPPRRRRRRRROOOOOOOOJJJJJJJJEEEEEEEECCCCCCCCTTTTTTTTSSSSSSSS
-// Start (mouse down / touch start)
+//mousedown
 projectsCartridge.addEventListener(events[deviceType].down, (e) => {
   e.preventDefault();
   projectsCartridge.style.width = "17vw";
@@ -205,17 +205,18 @@ projectsCartridge.addEventListener(events[deviceType].down, (e) => {
   projectsCartridge.style.paddingLeft = "0px";
   projectsCartridge.style.paddingTop = "0px";
   projectsCartridge.innerHTML = "";
-  projectsCartridge.style.backgroundImage = "url(Images/projectsdisk.PNG)";
+  projectsCartridge.style.backgroundImage = "url(Images/projectsdisk.png)";
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
   projectsCartridge.style.zIndex = "50";
   // Start movement
   moveElement = true;
+
   activeDisk = projectsCartridge;
 });
 
 projectsCartridge.addEventListener(events[deviceType].move, (e) => {
-  // If movement is true and the activeDisk is the projectsCartridge
+  // If movement is true, then set top and left to new x and y while removing the offset
   if (moveElement && activeDisk === projectsCartridge) {
     e.preventDefault();
     let newX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
@@ -224,7 +225,7 @@ projectsCartridge.addEventListener(events[deviceType].move, (e) => {
     let deltaY = initialY - newY;
     let newTop = projectsCartridge.offsetTop - deltaY;
     let newLeft = projectsCartridge.offsetLeft - deltaX;
-
+    
     // Adjust newTop and newLeft if they go beyond window boundaries
     const maxX = window.innerWidth - projectsCartridge.offsetWidth;
     const maxY = window.innerHeight - projectsCartridge.offsetHeight;
@@ -239,58 +240,67 @@ projectsCartridge.addEventListener(events[deviceType].move, (e) => {
 });
 
 // Mouse up or touch end
-window.addEventListener(events[deviceType].up, (e) => {
+projectsCartridge.addEventListener(events[deviceType].up, (stopMovement = (e) => { moveElement = false; }));
+
+projectsCartridge.addEventListener("mouseleave", (e) => {
+  if (moveElement && activeDisk === projectsCartridge) {
+    projectsCartridge.style.left = e.clientX + 'px';
+    projectsCartridge.style.top = e.clientY + 'px';
+  }
+});
+
+projectsCartridge.addEventListener(events[deviceType].up, (e) => {
   moveElement = false;
-  activeDisk = null;
-  projectsCartridge.innerHTML = "Projects";
+  projectsCartridge.innerHTML = "projects";
   projectsCartridge.style.backgroundImage = "url(Images/unhelddisk.png)";
 
   let initialPositionSet = false;
   let initialTopOffset = null;
-  // Initial positioning of projectsCartridge
-  positionProjectsCartridge();
+  // Initial positioning of projectscartridge
+  positionprojectsCartridge();
 
   // Update position on window resize
-  window.addEventListener('resize', positionProjectsCartridge);
+  window.addEventListener('resize', positionprojectsCartridge);
 });
 
-function positionProjectsCartridge() {
+function positionprojectsCartridge() {
   const offsetX = 486; // Set the desired horizontal offset
   const offsetY = 400; // Set the desired vertical offset
 
   //if the disk is put in the drive
   if (isCollide(projectsCartridge, floppyDrive)) {
-        diskOverride();
-        //scrollbar
-        const scrollboxStyle = document.createElement("style");
-        scrollboxStyle.innerHTML = `
-          .scrollbox::-webkit-scrollbar {
-            width: 25px; /* Adjust the width as needed */
-            border-radius: 0%;
-          }
-        
-          .scrollbox::-webkit-scrollbar-track {
-            background: rgb(58, 58, 58);
-            background-size: 40%;
-            background-repeat: repeat;
-            border-radius: 0%;
-          }
-        
-          .scrollbox::-webkit-scrollbar-thumb {
-            background: rgb(12, 12, 12);
-            border-radius: 0%;
-          }
-        
-          .scrollbox::-webkit-scrollbar-thumb:hover {
-            background: black;
-            background-size: 3%;
-            background-repeat: repeat;
-            border-radius: 0%;
-          }
-        `;
-        
-        document.head.appendChild(scrollboxStyle);
-        //endscrollbarstuff
+    diskOverride();
+
+    //scrollbar
+    const scrollboxStyle = document.createElement("style");
+    scrollboxStyle.innerHTML = `
+    .scrollbox::-webkit-scrollbar {
+     width: 25px; /* Adjust the width as needed */
+     border-radius: 0.5%;
+    }
+
+    .scrollbox::-webkit-scrollbar-track {
+     background-image: url("Images/greypaper.jpg");
+      background-size: 40vw;
+      background-repeat: repeat;
+    }
+
+    .scrollbox::-webkit-scrollbar-thumb {
+      border-radius: 0.5%;
+      background-image: url("Images/blackpaper.jpg");
+      background-size: 5vw;
+      background-repeat: repeat;
+    }
+
+   .scrollbox::-webkit-scrollbar-thumb:hover {
+      background: rgb(27, 23, 31);
+      background-size: 3%;
+      background-repeat: repeat;
+     border-radius: 0.2%;
+    }
+    `;
+    document.head.appendChild(scrollboxStyle);
+    //endscrollbarstuff
     scrollbox.style.backgroundImage = "url(Images/floralbackground.jpg)";
     scrollbox.style.backgroundRepeat = "repeat";
     scrollbox.style.backgroundSize = "40%";
@@ -311,7 +321,7 @@ function positionProjectsCartridge() {
   else{
 
     projectsCartridge.style.left="1%";
-    projectsCartridge.style.top="15%";
+    projectsCartridge.style.top="26%";
     projectsCartridge.style.zIndex="6";
     projectsPage.style.display = 'none';
     projectsCartridge.style.width="15vw";
@@ -319,20 +329,22 @@ function positionProjectsCartridge() {
     projectsCartridge.style.paddingLeft="3%";
     projectsCartridge.style.paddingTop=".6%";
     projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
-    projectsCartridge.innerHTML = "Projects";
-
+    projectsCartridge.innerHTML = "Contact";
+    
     var backgroundImage = scrollbox.style.backgroundImage;
-    if (backgroundImage.includes("Images/floralbackground.jpg")) {
+    if (backgroundImage.includes("Images/paperbackground.png")) {
       scrollbox.style.backgroundImage = "url(Images/nodisk.gif)";
-      scrollbox.style.backgroundSize = "cover";
+      scrollbox.style.backgroundSize="cover";
       floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";
     }
+    
   }
-  projectsCartridge.style.width="15vw";
-  projectsCartridge.style.height="3.8vw";
-  projectsCartridge.style.paddingLeft="3%";
-  projectsCartridge.style.paddingTop="0.6%";
+  contactCartridge.style.width="15vw";
+  contactCartridge.style.height="3.8vw";
+  contactCartridge.style.paddingLeft="3%";
+  contactCartridge.style.paddingTop=".6%";
 }
+
 
 //COOOOOOOOOONNNNNNNNNNNNNNTTTTTTTTTTAAAAAAAACCCCCCCCCCCCCTTTTTTTTTTTT!!!
 // Start (mouse down / touch start)

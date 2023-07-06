@@ -813,6 +813,17 @@ function isCollide(a, b) {
 function diskOverride(){
   floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";
 
+  aboutMeCartridge.style.left="1%";
+  aboutMeCartridge.style.top="4%";
+  aboutMeCartridge.style.zIndex="6";
+  aboutMePage.style.display = 'none';
+  aboutMeCartridge.style.width="15vw";
+  aboutMeCartridge.style.height="3.8vw";
+  aboutMeCartridge.style.paddingLeft="3%";
+  aboutMeCartridge.style.paddingTop=".6%";
+  aboutMeCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
+  aboutMeCartridge.innerHTML = "About Me";
+  
   projectsCartridge.style.left="1%";
   projectsCartridge.style.top="15%";
   projectsCartridge.style.zIndex="6";
@@ -824,16 +835,16 @@ function diskOverride(){
   projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
   projectsCartridge.innerHTML = "Projects";
 
-  aboutMeCartridge.style.left="1%";
-  aboutMeCartridge.style.top="4%";
-  aboutMeCartridge.style.zIndex="6";
-  aboutMePage.style.display = 'none';
-  aboutMeCartridge.style.width="15vw";
-  aboutMeCartridge.style.height="3.8vw";
-  aboutMeCartridge.style.paddingLeft="3%";
-  aboutMeCartridge.style.paddingTop=".6%";
-  aboutMeCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
-  aboutMeCartridge.innerHTML = "About Me";
+  researchCartridge.style.left="1%";
+  researchCartridge.style.top="26%";
+  researchCartridge.style.zIndex="6";
+  researchPage.style.display = 'none';
+  researchCartridge.style.width="15vw";
+  researchCartridge.style.height="3.8vw";
+  researchCartridge.style.paddingLeft="3%";
+  researchCartridge.style.paddingTop=".6%";
+  researchCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
+  researchCartridge.innerHTML = "Research";
 
   contactCartridge.style.left="1%";
   contactCartridge.style.top="37%";
@@ -845,17 +856,6 @@ function diskOverride(){
   contactCartridge.style.paddingTop=".6%";
   contactCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
   contactCartridge.innerHTML = "Contact";
-
-  researchCartridge.style.left="1%";
-  researchCartridge.style.top="26%";
-  researchCartridge.style.zIndex="6";
-  researchPage.style.display = 'none';
-  researchCartridge.style.width="15vw";
-  researchCartridge.style.height="3.8vw";
-  researchCartridge.style.paddingLeft="3%";
-  researchCartridge.style.paddingTop=".6%";
-  researchCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
-  researchCartridge.innerHTML = "Research";
 
   customCartridge.style.left="1%";
   customCartridge.style.top="48%";

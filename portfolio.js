@@ -205,7 +205,7 @@ projectsCartridge.addEventListener(events[deviceType].down, (e) => {
   projectsCartridge.style.paddingLeft = "0px";
   projectsCartridge.style.paddingTop = "0px";
   projectsCartridge.innerHTML = "";
-  projectsCartridge.style.backgroundImage = "url(Images/projectsdisk.png)";
+  projectsCartridge.style.backgroundImage = "url(Images/projectsdisk.PNG)";
   initialX = !isTouchDevice() ? e.clientX : e.touches[0].clientX;
   initialY = !isTouchDevice() ? e.clientY : e.touches[0].clientY;
   projectsCartridge.style.zIndex = "50";
@@ -823,7 +823,7 @@ function diskOverride(){
   projectsCartridge.style.paddingTop=".6%";
   projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
   projectsCartridge.innerHTML = "Projects";
-  
+
   aboutMeCartridge.style.left="1%";
   aboutMeCartridge.style.top="4%";
   aboutMeCartridge.style.zIndex="6";

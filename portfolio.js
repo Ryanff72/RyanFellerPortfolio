@@ -5,7 +5,6 @@ let activeDisk = "";
 
 
 //i just did this for the first 2 but then got bored or something? Images. idk :3
-let aboutmediskimg = "Images/aboutmedisk.PNG";
 let backgrounds = ["Images/nyanspace.gif", "Images/static.gif", "Images/code.gif", "Images/hacking.gif", "Images/face.gif", "Images/beachwalk.gif", "Images/mark.gif", "Images/bwface.gif", "Images/workhacking.gif", "Images/road.gif"];
 let currentBackground = 0;
 

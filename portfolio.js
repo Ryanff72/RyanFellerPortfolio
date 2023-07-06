@@ -339,10 +339,10 @@ function positionprojectsCartridge() {
     }
     
   }
-  contactCartridge.style.width="15vw";
-  contactCartridge.style.height="3.8vw";
-  contactCartridge.style.paddingLeft="3%";
-  contactCartridge.style.paddingTop=".6%";
+  projectsCartridge.style.width="15vw";
+  projectsCartridge.style.height="3.8vw";
+  projectsCartridge.style.paddingLeft="3%";
+  projectsCartridge.style.paddingTop=".6%";
 }
 
 

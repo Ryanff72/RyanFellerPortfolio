@@ -178,7 +178,7 @@ document.head.appendChild(scrollboxStyle);
     aboutMeCartridge.style.height="3.8vw";
     aboutMeCartridge.style.paddingLeft="3%";
     aboutMeCartridge.style.paddingTop=".6%";
-    aboutMeCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+    aboutMeCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
     aboutMeCartridge.innerHTML = "About Me";
 
     var backgroundImage = scrollbox.style.backgroundImage;
@@ -318,7 +318,7 @@ function positionProjectsCartridge() {
     projectsCartridge.style.height="3.8vw";
     projectsCartridge.style.paddingLeft="3%";
     projectsCartridge.style.paddingTop=".6%";
-    projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+    projectsCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
     projectsCartridge.innerHTML = "Projects";
 
     var backgroundImage = scrollbox.style.backgroundImage;
@@ -466,7 +466,7 @@ function positioncontactCartridge() {
     contactCartridge.style.height="3.8vw";
     contactCartridge.style.paddingLeft="3%";
     contactCartridge.style.paddingTop=".6%";
-    contactCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+    contactCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
     contactCartridge.innerHTML = "Contact";
     
     var backgroundImage = scrollbox.style.backgroundImage;
@@ -615,7 +615,7 @@ function positionresearchCartridge() {
     researchCartridge.style.height="3.8vw";
     researchCartridge.style.paddingLeft="3%";
     researchCartridge.style.paddingTop=".6%";
-    researchCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+    researchCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
     researchCartridge.innerHTML = "Research";
 
     var backgroundImage = scrollbox.style.backgroundImage;
@@ -766,7 +766,7 @@ function positioncustomCartridge() {
     customCartridge.style.height="3.8vw";
     customCartridge.style.paddingLeft="3%";
     customCartridge.style.paddingTop=".6%";
-    customCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+    customCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
     customCartridge.innerHTML = "?????";
 
     var backgroundImage = scrollbox.style.backgroundImage;
@@ -809,7 +809,7 @@ function diskOverride(){
   aboutMeCartridge.style.height="3.8vw";
   aboutMeCartridge.style.paddingLeft="3%";
   aboutMeCartridge.style.paddingTop=".6%";
-  aboutMeCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+  aboutMeCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
   aboutMeCartridge.innerHTML = "About Me";
 
   contactCartridge.style.left="1%";
@@ -820,7 +820,7 @@ function diskOverride(){
   contactCartridge.style.height="3.8vw";
   contactCartridge.style.paddingLeft="3%";
   contactCartridge.style.paddingTop=".6%";
-  contactCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+  contactCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
   contactCartridge.innerHTML = "Contact";
 
   researchCartridge.style.left="1%";
@@ -831,7 +831,7 @@ function diskOverride(){
   researchCartridge.style.height="3.8vw";
   researchCartridge.style.paddingLeft="3%";
   researchCartridge.style.paddingTop=".6%";
-  researchCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+  researchCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
   researchCartridge.innerHTML = "Research";
 
   customCartridge.style.left="1%";
@@ -842,7 +842,7 @@ function diskOverride(){
   customCartridge.style.height="3.8vw";
   customCartridge.style.paddingLeft="3%";
   customCartridge.style.paddingTop=".6%";
-  customCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+  customCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
   customCartridge.innerHTML = "?????";
 
   projectsCartridge.style.left="1%";
@@ -853,7 +853,7 @@ function diskOverride(){
   projectsCartridge.style.height="3.8vw";
   projectsCartridge.style.paddingLeft="3%";
   projectsCartridge.style.paddingTop=".6%";
-  projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)"
+  projectsCartridge.style.backgroundImage="url(Images/unhelddisk.PNG)"
   projectsCartridge.innerHTML = "Projects";
 }
 

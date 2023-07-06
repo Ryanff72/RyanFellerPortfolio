@@ -813,6 +813,17 @@ function isCollide(a, b) {
 function diskOverride(){
   floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";
 
+  projectsCartridge.style.left="1%";
+  projectsCartridge.style.top="15%";
+  projectsCartridge.style.zIndex="6";
+  projectsPage.style.display = 'none';
+  projectsCartridge.style.width="15vw";
+  projectsCartridge.style.height="3.8vw";
+  projectsCartridge.style.paddingLeft="3%";
+  projectsCartridge.style.paddingTop=".6%";
+  projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
+  projectsCartridge.innerHTML = "Projects";
+  
   aboutMeCartridge.style.left="1%";
   aboutMeCartridge.style.top="4%";
   aboutMeCartridge.style.zIndex="6";
@@ -857,16 +868,7 @@ function diskOverride(){
   customCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
   customCartridge.innerHTML = "?????";
 
-  projectsCartridge.style.left="1%";
-  projectsCartridge.style.top="15%";
-  projectsCartridge.style.zIndex="6";
-  projectsPage.style.display = 'none';
-  projectsCartridge.style.width="15vw";
-  projectsCartridge.style.height="3.8vw";
-  projectsCartridge.style.paddingLeft="3%";
-  projectsCartridge.style.paddingTop=".6%";
-  projectsCartridge.style.backgroundImage="url(Images/unhelddisk.png)";
-  projectsCartridge.innerHTML = "Projects";
+
 }
 
   

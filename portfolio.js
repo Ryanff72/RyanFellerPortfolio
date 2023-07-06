@@ -332,7 +332,7 @@ function positionprojectsCartridge() {
     projectsCartridge.innerHTML = "Projects";
 
     var backgroundImage = scrollbox.style.backgroundImage;
-    if (backgroundImage.includes("Images/whitebackground.jpg")) {
+    if (backgroundImage.includes("Images/floralbackground.jpg")) {
       scrollbox.style.backgroundImage = "url(Images/nodisk.gif)";
       scrollbox.style.backgroundSize="cover";
       floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";

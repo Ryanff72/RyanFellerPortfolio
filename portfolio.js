@@ -812,7 +812,7 @@ function isCollide(a, b) {
 //makes other cartridges go away when you put another in, yknow, resets stuff YES IK ITS UGLY BUT IT WORKS
 function diskOverride(){
   floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";
-
+  scrollbox.scrollTop = 0;
   aboutMeCartridge.style.left="1%";
   aboutMeCartridge.style.top="4%";
   aboutMeCartridge.style.zIndex="6";

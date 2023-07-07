@@ -281,7 +281,7 @@ function positionprojectsCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-      background-image: url("Images/whitebackground.jpg");
+      background-image: url("Images/gradient.gif");
       background-size: 40vw;
       background-repeat: repeat;
     }
@@ -431,7 +431,7 @@ function positioncontactCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-     background-image: url("Images/greypaper.jpg");
+      background-image: url("Images/greypaper.jpg");
       background-size: 40vw;
       background-repeat: repeat;
     }
@@ -580,7 +580,7 @@ function positionresearchCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-     background: white;
+      background: rgb(255, 234, 229);
       background-size: 40vw;
       background-repeat: repeat;
     }
@@ -732,7 +732,7 @@ function positioncustomCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-     background-image: url("Images/why.png");
+      background-image: url("Images/gradient.gif");
       background-size: .1vw;
       background-repeat: repeat;
     }

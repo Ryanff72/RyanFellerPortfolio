@@ -111,46 +111,47 @@ window.addEventListener(events[deviceType].up, (e) => {
   // Initial positioning of aboutMeCartridge
   positionAboutMeCartridge();
 
-  // Update position on window resize
+  // Update position on window size
   window.addEventListener('resize', positionAboutMeCartridge);
 });
 
 function positionAboutMeCartridge() {
-  const offsetX = 486; // Set the desired horizontal offset
-  const offsetY = 400; // Set the desired vertical offset
+  const offsetX = 486; // offset x
+  const offsetY = 400; // offset y
 
   //if the disk is put in the drive
-  if (isCollide(aboutMeCartridge, floppyDrive)) {
+  if (isCollide(aboutMeCartridge, floppyDrive)){
+
     diskOverride();
 
     //scrollbar
     const scrollboxStyle = document.createElement("style");
-scrollboxStyle.innerHTML = `
-  .scrollbox::-webkit-scrollbar {
-    width: 25px; /* Adjust the width as needed */
-    border-radius: 0.5%;
-  }
+    scrollboxStyle.innerHTML = `
+    .scrollbox::-webkit-scrollbar {
+     width: 25px; /* Adjust the width as needed */
+     border-radius: 0.5%;
+    }
 
-  .scrollbox::-webkit-scrollbar-track {
-    background-image: url("Images/gradient.gif");
-    background-size: 40vw;
-    background-repeat: repeat;
-  }
+    .scrollbox::-webkit-scrollbar-track {
+      background-image: url("Images/gradient.gif");
+      background-size: 40vw;
+      background-repeat: repeat;
+    }
 
-  .scrollbox::-webkit-scrollbar-thumb {
-    border-radius: 0.5%;
-    background: rgb(42, 36, 48);
-  }
+    .scrollbox::-webkit-scrollbar-thumb {
+      border-radius: 0.5%;
+      background: rgb(42, 36, 48);
+    }
 
-  .scrollbox::-webkit-scrollbar-thumb:hover {
-    background: rgb(27, 23, 31);
-    background-size: 3%;
-    background-repeat: repeat;
-    border-radius: 0.2%;
-  }
-`;
-document.head.appendChild(scrollboxStyle);
-//endscrollbarstuff
+    .scrollbox::-webkit-scrollbar-thumb:hover {
+      background: rgb(27, 23, 31);
+      background-size: 3%;
+      background-repeat: repeat;
+      border-radius: 0.2%;
+    }
+   `;
+    document.head.appendChild(scrollboxStyle);
+    //endscrollbarstuff
     scrollbox.style.backgroundImage = "url(Images/bcgrnd0.jpg)";
     scrollbox.style.backgroundRepeat = "repeat";
     scrollbox.style.backgroundSize = "30%";
@@ -264,11 +265,11 @@ projectsCartridge.addEventListener(events[deviceType].up, (e) => {
 });
 
 function positionprojectsCartridge() {
-  const offsetX = 486; // Set the desired horizontal offset
-  const offsetY = 400; // Set the desired vertical offset
+  const offsetX = 486; // offset x
+  const offsetY = 400; // offset y
 
   //if the disk is put in the drive
-  if (isCollide(projectsCartridge, floppyDrive)) {
+  if (isCollide(projectsCartridge, floppyDrive) && projectsPage.style.display != 'block') {
     diskOverride();
 
     //scrollbar
@@ -280,7 +281,7 @@ function positionprojectsCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-     background: white;
+      background-image: url("Images/whitebackground.jpg");
       background-size: 40vw;
       background-repeat: repeat;
     }
@@ -414,11 +415,11 @@ contactCartridge.addEventListener(events[deviceType].up, (e) => {
 });
 
 function positioncontactCartridge() {
-  const offsetX = 486; // Set the desired horizontal offset
-  const offsetY = 400; // Set the desired vertical offset
+  const offsetX = 486; // offset x
+  const offsetY = 400; // offset y
 
   //if the disk is put in the drive
-  if (isCollide(contactCartridge, floppyDrive)) {
+  if (isCollide(contactCartridge, floppyDrive) && contactPage.style.display != 'block') {
     diskOverride();
 
     //scrollbar
@@ -563,11 +564,11 @@ researchCartridge.addEventListener(events[deviceType].up, (e) => {
 });
 
 function positionresearchCartridge() {
-  const offsetX = 486; // Set the desired horizontal offset
-  const offsetY = 400; // Set the desired vertical offset
+  const offsetX = 486; // offset x
+  const offsetY = 400; // offset y
 
   //if the disk is put in the drive
-  if (isCollide(researchCartridge, floppyDrive)) {
+  if (isCollide(researchCartridge, floppyDrive) && researchPage.style.display != 'block') {
     diskOverride();
 
     //scrollbar
@@ -699,28 +700,29 @@ customCartridge.addEventListener("mouseleave", (e) => {
 });
 
 customCartridge.addEventListener(events[deviceType].up, (e) => {
+  
   moveElement = false;
   customCartridge.innerHTML = "?????";
   customCartridge.style.backgroundImage = "url(Images/unhelddisk.png)";
 
   let initialPositionSet = false;
   let initialTopOffset = null;
-  // Initial positioning of customcartridge
+  // initial positioning of customcartridge
   positioncustomCartridge();
 
-  // Update position on window resize
+  // update position on window resize
   window.addEventListener('resize', positioncustomCartridge);
 });
 
 
 function positioncustomCartridge() {
-  const offsetX = 486; // Set the desired horizontal offset
-  const offsetY = 400; // Set the desired vertical offset
+  const offsetX = 486; // offset x
+  const offsetY = 400; // offset y
 
   //if the disk is put in the drive
-  if (isCollide(customCartridge, floppyDrive)) {
+  if (isCollide(customCartridge, floppyDrive) && customPage.style.display != 'block') {
     diskOverride();
-
+    
     //scrollbar
     const scrollboxStyle = document.createElement("style");
     scrollboxStyle.innerHTML = `
@@ -809,10 +811,15 @@ function isCollide(a, b) {
   );
 }
 
-//makes other cartridges go away when you put another in, yknow, resets stuff YES IK ITS UGLY BUT IT WORKS
+//makes other cartridges go away when you put another in, yknow, resets stuff
 function diskOverride(){
   floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";
-  scrollbox.scrollTop = 0;
+
+  if (!scrollbox.style.backgroundImage.includes("Images/bcgrnd0.jpg")) {
+    scrollbox.scrollTop = 0; // resets scrollbar
+  }
+
+
   aboutMeCartridge.style.left="1%";
   aboutMeCartridge.style.top="4%";
   aboutMeCartridge.style.zIndex="6";

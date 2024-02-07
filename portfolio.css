@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: 'LTCushion-Medium';
-  src: url('Fonts/LTCushion-Medium.ttf) format('truetype');
+  src: url('Fonts/LTCushion-Medium.ttf') format('truetype');
 }
 
 @font-face {

@@ -133,21 +133,23 @@ function positionAboutMeCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-      background-image: url("Images/gradient.gif");
+      background-image: url("Images/greypaper.jpg");
       background-size: 40vw;
       background-repeat: repeat;
     }
 
     .scrollbox::-webkit-scrollbar-thumb {
       border-radius: 0.5%;
-      background: rgb(42, 36, 48);
+      background-image: url("Images/blackpaper.jpg");
+      background-size: 5vw;
+      background-repeat: repeat;
     }
 
-    .scrollbox::-webkit-scrollbar-thumb:hover {
+   .scrollbox::-webkit-scrollbar-thumb:hover {
       background: rgb(27, 23, 31);
       background-size: 3%;
       background-repeat: repeat;
-      border-radius: 0.2%;
+     border-radius: 0.2%;
     }
    `;
     document.head.appendChild(scrollboxStyle);
@@ -281,21 +283,21 @@ function positionprojectsCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-      background-image: url("Images/gradient.gif");
+      background-image: url("Images/greypaper.jpg");
       background-size: 40vw;
       background-repeat: repeat;
     }
 
     .scrollbox::-webkit-scrollbar-thumb {
       border-radius: 0.5%;
-      background-image: url("Images/steel.jpg");
-      background-size: 60vw;
+      background-image: url("Images/blackpaper.jpg");
+      background-size: 5vw;
       background-repeat: repeat;
     }
 
    .scrollbox::-webkit-scrollbar-thumb:hover {
-    background-image: url("Images/blacksteen.jpg");
-      background-size: 60vw;
+      background: rgb(27, 23, 31);
+      background-size: 3%;
       background-repeat: repeat;
      border-radius: 0.2%;
     }
@@ -580,21 +582,21 @@ function positionresearchCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-      background: rgb(255, 234, 229);
+      background-image: url("Images/greypaper.jpg");
       background-size: 40vw;
       background-repeat: repeat;
     }
 
     .scrollbox::-webkit-scrollbar-thumb {
       border-radius: 0.5%;
-      background-image: url("Images/steel.jpg");
-      background-size: 60vw;
+      background-image: url("Images/blackpaper.jpg");
+      background-size: 5vw;
       background-repeat: repeat;
     }
 
    .scrollbox::-webkit-scrollbar-thumb:hover {
-    background-image: url("Images/blacksteen.jpg");
-      background-size: 60vw;
+      background: rgb(27, 23, 31);
+      background-size: 3%;
       background-repeat: repeat;
      border-radius: 0.2%;
     }
@@ -732,15 +734,15 @@ function positioncustomCartridge() {
     }
 
     .scrollbox::-webkit-scrollbar-track {
-      background-image: url("Images/gradient.gif");
-      background-size: .1vw;
+      background-image: url("Images/greypaper.jpg");
+      background-size: 40vw;
       background-repeat: repeat;
     }
 
     .scrollbox::-webkit-scrollbar-thumb {
       border-radius: 0.5%;
-      background-image: url("Images/barf.png");
-      background-size: .1vw;
+      background-image: url("Images/blackpaper.jpg");
+      background-size: 5vw;
       background-repeat: repeat;
     }
 

@@ -8,6 +8,11 @@ body {
 }
 
 @font-face {
+  font-family: 'Serif';
+  src: url('Fonts/LTCushion-Medium.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Alagard';
   src: url('Fonts/alagard.ttf') format('truetype');
 }
@@ -77,7 +82,7 @@ but simply can't be bothered to do so*/
   align-items: center;
   justify-content: flex-start;
   text-align: left !important;
-  font-family: 'Alagard', Arial, sans-serif;
+  font-family: 'Serif', Arial, serif;
   cursor: move;
   padding-left: 3%;
   padding-top: .6%;

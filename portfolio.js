@@ -154,7 +154,7 @@ function positionAboutMeCartridge() {
    `;
     document.head.appendChild(scrollboxStyle);
     //endscrollbarstuff
-    scrollbox.style.backgroundImage = "url(Images/grid.jpg)";
+    scrollbox.style.backgroundImage = "url(Images/skyscraper.jpg)";
     scrollbox.style.backgroundRepeat = "repeat";
     scrollbox.style.backgroundSize = "30%";
     aboutMePage.style.display = 'block';
@@ -185,7 +185,7 @@ function positionAboutMeCartridge() {
     aboutMeCartridge.innerHTML = "About Me";
 
     var backgroundImage = scrollbox.style.backgroundImage;
-    if (backgroundImage.includes("Images/bcgrnd0.jpg")) {
+    if (backgroundImage.includes("Images/skyscraper.jpg")) {
       scrollbox.style.backgroundImage = "url(Images/nodisk.gif)";
       scrollbox.style.backgroundSize="cover";
       floppyDrive.style.backgroundImage="url(Images/diskdrive0.png)";

@@ -154,7 +154,7 @@ function positionAboutMeCartridge() {
    `;
     document.head.appendChild(scrollboxStyle);
     //endscrollbarstuff
-    scrollbox.style.backgroundImage = "url(Images/papyrus.jpg)";
+    scrollbox.style.backgroundImage = "url(Images/grid.jpg)";
     scrollbox.style.backgroundRepeat = "repeat";
     scrollbox.style.backgroundSize = "30%";
     aboutMePage.style.display = 'block';
